@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calculadora</title>
+<style>
+.calculator {
+  width: 300px;
+  margin: 50px auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.screen {
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.screen input {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  text-align: right;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+}
+
+button {
+  padding: 10px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 20px;
+  background-color: #e0e0e0;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #ccc;
+}
+</style>
+</head>
+<body>
+
+<div class="calculator">
+  <div class="screen">
+    <input type="text" id="display" readonly>
+  </div>
+  <div class="buttons">
+    <button onclick="addToDisplay('1')">1</button>
+    <button onclick="addToDisplay('2')">2</button>
+    <button onclick="addToDisplay('3')">3</button>
+    <button onclick="addToDisplay('+')">+</button>
+    <button onclick="addToDisplay('4')">4</button>
+    <button onclick="addToDisplay('5')">5</button>
+    <button onclick="addToDisplay('6')">6</button>
+    <button onclick="addToDisplay('-')">-</button>
+    <button onclick="addToDisplay('7')">7</button>
+    <button onclick="addToDisplay('8')">8</button>
+    <button onclick="addToDisplay('9')">9</button>
+    <button onclick="addToDisplay('*')">*</button>
+    <button onclick="addToDisplay('0')">0</button>
+    <button onclick="addToDisplay('.')
